@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>用户列表</title>
+</head>
+<body>
+  <h1>用户信息</h1>
+  <ul>
+    <%
+  users.forEach(user=>{
+   %>
+    
+    <li><%=user._id%>--<%=user.name%>--<%=user.age%>--<%=user.gender%></li>
+    
+    <% 
+  })
+  %>
+  </ul>
+  <h2><a href="/">继续添加</a></h2>
+  
+</body>
+</html>
